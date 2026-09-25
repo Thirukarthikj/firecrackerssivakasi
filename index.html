@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Sivakasi Trading Agency | Sivakasi Master Fireworks Wholesaler</title>
+    <meta name="description"
+        content="Welcome to Sivakasi Trading Agency Sivakasi. 25+ years of trusted fireworks craftsmanship, CSIR-NEERI green crackers, wholesale pricing, and pan-India safe delivery." />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main> :first-child {
+                margin-top: 0 !important;
+            }
+
+            main> :last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* === Scroll Reveal === */
+        .reveal-init {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .reveal-animate {
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* === Back to Top === */
+        #backToTop {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.35s ease;
+            pointer-events: none;
+            background: #f5b942;
+            color: #422d00;
+            box-shadow: 0 4px 20px rgba(245, 185, 66, 0.3);
+        }
+
+        #backToTop.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        #backToTop:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 28px rgba(245, 185, 66, 0.45);
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b91c1c",
+                        "primary-container": "#ea580c"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "body-sm": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-xl": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body
+    class="bg-white font-body-md text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900 relative min-h-screen">
+    <div
+        class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(234,88,12,0.05),transparent_70%)]">
+    </div>
+
+    <!-- Header / Sticky Navigation -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)]">
+        <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 via-amber-500 to-red-700 flex items-center justify-center text-white shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform shrink-0">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M12 2L13.8 7.2L19 9L13.8 10.8L12 16L10.2 10.8L5 9L10.2 7.2L12 2Z" />
+                        <circle cx="19" cy="4.5" r="1.5" />
+                        <circle cx="4.5" cy="17" r="1.5" />
+                        <circle cx="19" cy="17" r="1.5" />
+                        <circle cx="4.5" cy="4.5" r="1.5" />
+                    </svg>
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span
+                        class="font-headline-sm text-base sm:text-lg tracking-tight font-extrabold text-red-700">SIVAKASI TRADING AGENCY</span>
+                    <span class="text-[10px] tracking-widest text-slate-500 uppercase font-bold">Master Fireworks Wholesaler</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden lg:flex items-center gap-1.5 xl:gap-3 whitespace-nowrap">
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold bg-red-50 text-red-700 whitespace-nowrap"
+                    data-path="home" href="index.html">Home</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="about" href="about.html">About</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="collections" href="collections.html">Collections</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="services" href="services.html">Services</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="safety" href="safety.html">Safety</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="shipping" href="shipping.html">Shipping</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="price-list" href="price-list.html">Price List</a>
+                <a class="tracking-wider uppercase transition-all py-2 px-2.5 xl:px-3 text-xs xl:text-sm rounded-lg font-bold text-slate-600 hover:text-red-700 hover:bg-slate-50 whitespace-nowrap"
+                    data-path="contact" href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Dropdown -->
+            <div class="flex items-center gap-3 shrink-0">
+                <details class="lg:hidden relative group">
+                    <summary
+                        class="list-none cursor-pointer p-2 rounded-lg bg-slate-100 text-slate-700 hover:text-red-700 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[24px]">menu</span>
+                    </summary>
+                    <div
+                        class="absolute right-0 mt-3 w-64 p-4 rounded-xl bg-white shadow-2xl border border-slate-200 flex flex-col gap-2 z-50">
+                        <a class="block px-3 py-2 rounded-lg font-bold bg-red-50 text-red-700 text-sm uppercase tracking-wider"
+                            href="index.html">Home</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="about.html">About</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="collections.html">Collections</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="services.html">Services</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="safety.html">Safety</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="shipping.html">Shipping</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="price-list.html">Price List</a>
+                        <a class="block px-3 py-2 rounded-lg font-bold text-slate-700 hover:bg-red-50 hover:text-red-700 text-sm uppercase tracking-wider"
+                            href="contact.html">Contact</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 w-full pt-20 bg-white">
+        <!-- 1. HERO SECTION -->
+        <section
+            class="relative min-h-[640px] lg:min-h-[740px] flex items-center justify-center overflow-hidden py-16 lg:py-24 text-white"
+            id="hero">
+            <!-- Background Image & Atmospheric Night Celebration Overlay -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img src="hero_diwali_fireworks.jpg" alt="Grand Diwali Celebration Fireworks" class="w-full h-full object-cover object-center filter brightness-95 scale-100" />
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/65 to-slate-950/90"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,158,11,0.12)_0%,transparent_70%)]"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-12 text-center flex flex-col items-center">
+                <!-- Eyebrow Badge -->
+                <div
+                    class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/80 border border-amber-400/40 backdrop-blur-md shadow-lg shadow-amber-500/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    <span class="text-xs uppercase tracking-[0.18em] text-amber-300 font-bold">25+ Years of Brilliance • Sivakasi Heritage</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1
+                    class="font-headline-lg text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white font-extrabold max-w-4xl mx-auto leading-tight drop-shadow-md">
+                    Celebrate Every Moment <br />
+                    <span class="bg-gradient-to-r from-amber-300 via-orange-400 to-amber-200 bg-clip-text text-transparent">
+                        with Brilliance
+                    </span>
+                </h1>
+
+                <!-- Supporting Tagline & Description -->
+                <p class="text-lg sm:text-xl text-amber-300 mt-4 font-semibold drop-shadow-sm">
+                    Direct Manufacturer Wholesale Fireworks from Sivakasi
+                </p>
+                <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto mt-3 text-balance drop-shadow">
+                    Bring colour, thunder, and happiness to every celebration with Sivakasi Trading Agency. From
+                    traditional favourites to spectacular sky shots, discover premium fireworks crafted for
+                    unforgettable festivities.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
+                    <a class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-red-600 via-amber-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-bold text-base shadow-[0_4px_20px_rgba(245,158,11,0.4)] hover:shadow-[0_6px_28px_rgba(245,158,11,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all"
+                        href="collections.html">
+                        <span>Explore Collections</span>
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges Strip -->
+                <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-3 pt-10 mt-8">
+                    <div
+                        class="flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 backdrop-blur-md shadow-xl text-slate-100 hover:border-amber-400/50 transition-colors">
+                        <span class="material-symbols-outlined text-amber-400 text-[22px]">verified</span>
+                        <span class="text-xs sm:text-sm font-semibold">Quality Checked</span>
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 backdrop-blur-md shadow-xl text-slate-100 hover:border-emerald-400/50 transition-colors">
+                        <span class="material-symbols-outlined text-emerald-400 text-[22px]">eco</span>
+                        <span class="text-xs sm:text-sm font-semibold">Green Certified</span>
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 backdrop-blur-md shadow-xl text-slate-100 hover:border-red-400/50 transition-colors">
+                        <span class="material-symbols-outlined text-red-400 text-[22px]">location_on</span>
+                        <span class="text-xs sm:text-sm font-semibold">Sivakasi Based</span>
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 backdrop-blur-md shadow-xl text-slate-100 hover:border-sky-400/50 transition-colors">
+                        <span class="material-symbols-outlined text-sky-400 text-[22px]">local_shipping</span>
+                        <span class="text-xs sm:text-sm font-semibold">Pan-India PESO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TRUST STATISTICS STRIP -->
+        <section class="relative z-20 py-8 bg-slate-50 border-y border-slate-200/80 shadow-sm" id="stats">
+            <div
+                class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-6 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+                <div class="flex items-center gap-4 pt-4 lg:pt-0">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700 shrink-0">
+                        <span class="material-symbols-outlined text-[28px]">stars</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-red-700">25+</div>
+                        <div class="text-xs sm:text-sm text-slate-600 font-medium">Years of Excellence</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 pt-4 lg:pt-0 lg:pl-8">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                        <span class="material-symbols-outlined text-[28px]">fact_check</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-slate-900">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-600 font-medium">Certified Products</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 pt-4 lg:pt-0 lg:pl-8">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-red-700 shrink-0">
+                        <span class="material-symbols-outlined text-[28px]">hub</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-slate-900">Sivakasi</div>
+                        <div class="text-xs sm:text-sm text-slate-600 font-medium">Direct Factory Hub</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 pt-4 lg:pt-0 lg:pl-8">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center text-sky-700 shrink-0">
+                        <span class="material-symbols-outlined text-[28px]">handshake</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-slate-900">Pan-India</div>
+                        <div class="text-xs sm:text-sm text-slate-600 font-medium">Logistics Network</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FEATURED COLLECTIONS PREVIEW -->
+        <section class="py-20 bg-white" id="featured-categories">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span
+                        class="text-xs uppercase tracking-widest text-red-700 font-bold px-3 py-1 rounded bg-red-50">Curated
+                        Range</span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">Explore Our
+                        Fireworks Collections</h2>
+                    <p class="text-slate-600 mt-2 text-base">Select from over 50+ hand-picked Sivakasi varieties
+                        spanning spectacular aerial shows to beloved family sparklers.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Category 1 -->
+                    <div
+                        class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between overflow-hidden">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-4 overflow-hidden relative">
+                                <img src="category_aerial_shots.jpg" alt="Aerial Fireworks Display" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-bold text-amber-400 uppercase tracking-wider">Aerial Cakes</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Aerial Fireworks</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Fancy sky shots, multi-color repeaters,
+                                whistling rockets, and grand 12-to-240 shot display cakes.</p>
+                        </div>
+                        <a href="collections.html"
+                            class="inline-flex items-center gap-1.5 text-red-700 font-bold text-sm mt-6 group-hover:gap-2.5 transition-all">
+                            <span>Browse Aerial Shots</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div
+                        class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between overflow-hidden">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-4 overflow-hidden relative">
+                                <img src="category_sparklers_pots.jpg" alt="Sparklers and Flower Pots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-bold text-red-400 uppercase tracking-wider">Ground Brilliance</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Sparklers & Pots</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Golden electric sparklers, green
+                                sparklers, high-spout flower pots, and dazzling ground chakkars.</p>
+                        </div>
+                        <a href="collections.html"
+                            class="inline-flex items-center gap-1.5 text-red-700 font-bold text-sm mt-6 group-hover:gap-2.5 transition-all">
+                            <span>Browse Sparklers</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div
+                        class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between overflow-hidden">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-4 overflow-hidden relative">
+                                <img src="category_sound_crackers.jpg" alt="Sound Crackers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Green Certified</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Sound Crackers</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Classic 28-Chorsa, Bijili crackers, hydro
+                                bombs, paper bombs, and thunderous festive garland laris.</p>
+                        </div>
+                        <a href="collections.html"
+                            class="inline-flex items-center gap-1.5 text-red-700 font-bold text-sm mt-6 group-hover:gap-2.5 transition-all">
+                            <span>Browse Sound Crackers</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div
+                        class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between overflow-hidden">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-4 overflow-hidden relative">
+                                <img src="category_gift_boxes.jpg" alt="Family Gift Boxes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-bold text-purple-400 uppercase tracking-wider">Gift Hampers</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Family Gift Boxes</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Deluxe assortment hampers packed with 30
+                                to 75 curated festive items. Perfect for family gifting.</p>
+                        </div>
+                        <a href="collections.html"
+                            class="inline-flex items-center gap-1.5 text-red-700 font-bold text-sm mt-6 group-hover:gap-2.5 transition-all">
+                            <span>Browse Gift Boxes</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- View All Products CTA -->
+                <div class="text-center mt-12">
+                    <a href="collections.html"
+                        class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow hover:shadow-lg transition-all">
+                        <span>View Complete 50+ Product Catalog</span>
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WHY CHOOSE US / HERITAGE TEASER -->
+        <section class="py-20 bg-slate-50 border-y border-slate-200/80" id="why-sivas">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 flex flex-col items-start">
+                        <span
+                            class="text-xs uppercase tracking-widest text-red-700 font-bold px-3 py-1 rounded bg-red-100">Why
+                            Sivakasi Trading Agency</span>
+                        <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">Direct
+                            Factory Excellence, Safety You Can Trust</h2>
+                        <p class="text-slate-600 mt-4 text-base leading-relaxed">
+                            Established in the heart of Sivakasi, we combine a quarter-century of pyrotechnic mastery
+                            with stringent PESO compliance and CSIR-NEERI green cracker formulations. Every box you
+                            receive is freshly packed with zero compromises on festive joy or safety.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mt-8">
+                            <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm">
+                                <span
+                                    class="material-symbols-outlined text-red-700 text-[24px] mb-2">shield_check</span>
+                                <h4 class="font-bold text-slate-900 text-base">CSIR-NEERI Certified</h4>
+                                <p class="text-xs text-slate-500 mt-1">30-35% lower emissions with SWAS, STAR, and SAFAL
+                                    compositions.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm">
+                                <span class="material-symbols-outlined text-amber-600 text-[24px] mb-2">sell</span>
+                                <h4 class="font-bold text-slate-900 text-base">Factory Direct Pricing</h4>
+                                <p class="text-xs text-slate-500 mt-1">Direct Sivakasi wholesale rates with special
+                                    volume tier discounts.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 mt-8">
+                            <a href="about.html"
+                                class="inline-flex items-center gap-2 text-sm font-bold text-red-700 hover:text-red-800">
+                                <span>Read Full Company Story</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </a>
+                            <span class="text-slate-300">•</span>
+                            <a href="safety.html"
+                                class="inline-flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-slate-900">
+                                <span>Safety Protocols</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                        <div
+                            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-center text-center">
+                            <div class="text-3xl font-extrabold text-red-700 mb-1">50+</div>
+                            <div class="font-bold text-slate-800 text-sm">Product Varieties</div>
+                            <div class="text-xs text-slate-500 mt-1">Sparklers, Bombs, Cakes, & Combos</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-center text-center">
+                            <div class="text-3xl font-extrabold text-amber-600 mb-1">10,000+</div>
+                            <div class="font-bold text-slate-800 text-sm">Happy Families</div>
+                            <div class="text-xs text-slate-500 mt-1">Delighting celebrations since 1999</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-center text-center">
+                            <div class="text-3xl font-extrabold text-emerald-600 mb-1">100%</div>
+                            <div class="font-bold text-slate-800 text-sm">PESO Compliant</div>
+                            <div class="text-xs text-slate-500 mt-1">Authorized licensed transport</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-center text-center">
+                            <div class="text-3xl font-extrabold text-sky-600 mb-1">24/7</div>
+                            <div class="font-bold text-slate-800 text-sm">Trade Desk Support</div>
+                            <div class="text-xs text-slate-500 mt-1">Direct WhatsApp order assistance</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DOWNLOAD RATE CARD BANNER -->
+        <section class="py-16 bg-white" id="download-cta">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div
+                    class="relative overflow-hidden p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-red-800 via-amber-700 to-red-900 text-white shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-amber-500/20">
+                    <img src="category_aerial_shots.jpg" alt="Aerial fireworks backdrop" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-30 pointer-events-none" />
+                    <div class="relative z-10 max-w-2xl text-center lg:text-left">
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider mb-3">Season
+                            2025–2026 Catalog</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">Download the Official
+                            Sivakasi Price List</h3>
+                        <p class="text-white/90 text-sm sm:text-base mt-2">Get transparent piece and case rates for all
+                            50+ pyrotechnic items. High-resolution rate card available for immediate download.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+                        <a href="sivakasi_price_list_2025.jpg" download="Sivakasi_Trading_Agency_Price_List_2025.jpg"
+                            class="px-6 py-3.5 rounded-xl bg-white text-red-700 font-bold text-sm shadow-lg hover:bg-slate-50 transition-all inline-flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">download</span>
+                            <span>Download Rate Card</span>
+                        </a>
+                        <a href="price-list.html"
+                            class="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow-lg transition-all inline-flex items-center gap-2">
+                            <span>View Online Table</span>
+                            <span class="material-symbols-outlined text-[18px]">table_chart</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Master Comprehensive Footer -->
+    <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <!-- Main 4-Column Grid -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-slate-800">
+                <!-- Col 1: Brand & Heritage (4 Cols) -->
+                <div class="lg:col-span-4 flex flex-col items-start">
+                    <a href="index.html" class="flex items-center gap-3 group mb-4">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 via-amber-500 to-red-700 flex items-center justify-center text-white shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform shrink-0">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 2L13.8 7.2L19 9L13.8 10.8L12 16L10.2 10.8L5 9L10.2 7.2L12 2Z" />
+                                <circle cx="19" cy="4.5" r="1.5" />
+                                <circle cx="4.5" cy="17" r="1.5" />
+                                <circle cx="19" cy="17" r="1.5" />
+                                <circle cx="4.5" cy="4.5" r="1.5" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-lg tracking-tight font-extrabold text-white">SIVAKASI TRADING AGENCY</span>
+                            <span class="text-[10px] tracking-widest text-amber-400 uppercase font-bold">Master Fireworks Wholesaler</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Sivakasi's premier fireworks manufacturer and wholesaler for over 25 years. We supply genuine,
+                        CSIR-NEERI certified green crackers and spectacular aerial displays directly from India's
+                        pyrotechnic capital with strict PESO regulatory compliance.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-emerald-400">
+                            <span class="material-symbols-outlined text-[14px]">verified</span> PESO Licensed
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-amber-400">
+                            <span class="material-symbols-outlined text-[14px]">eco</span> Green Crackers
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-sky-400">
+                            <span class="material-symbols-outlined text-[14px]">factory</span> Sivakasi Origin
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links (2 Cols) -->
+                <div class="lg:col-span-2">
+                    <h4
+                        class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-red-600 pl-2.5">
+                        Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><a href="index.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Home</a></li>
+                        <li><a href="about.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> About Us</a></li>
+                        <li><a href="collections.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Collections</a></li>
+                        <li><a href="services.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Display Services</a></li>
+                        <li><a href="safety.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Safety & Green</a></li>
+                        <li><a href="shipping.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Shipping Hubs</a></li>
+                        <li><a href="price-list.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Price List 2025</a></li>
+                        <li><a href="contact.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Trade Counter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Popular Categories (3 Cols) -->
+                <div class="lg:col-span-3">
+                    <h4
+                        class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-amber-500 pl-2.5">
+                        Fireworks Range</h4>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><a href="collections.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Night Sky Aerial Cakes (12–240 Shots)</a>
+                        </li>
+                        <li><a href="collections.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Electric & Colored Sparklers</a></li>
+                        <li><a href="collections.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Sound Crackers & Atom Bombs</a></li>
+                        <li><a href="collections.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Ground Chakkars & Flower Pots</a></li>
+                        <li><a href="collections.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> Deluxe Family Gift Hampers</a></li>
+                        <li><a href="safety.html"
+                                class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><span
+                                    class="text-slate-600 text-xs">▸</span> CSIR-NEERI Low-Emission Crackers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Factory & Trade Desk (3 Cols) -->
+                <div class="lg:col-span-3 flex flex-col">
+                    <h4
+                        class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-red-600 pl-2.5">
+                        Factory & Trade Desk</h4>
+                    <div class="space-y-3 text-sm text-slate-400 mb-5">
+                        <div class="flex items-start gap-2.5">
+                            <span
+                                class="material-symbols-outlined text-red-500 text-[18px] shrink-0 mt-0.5">location_on</span>
+                            <span>142/3, Bypass Road, Near Bus Stand, Sivakasi – 626123, Tamil Nadu, India</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <span class="material-symbols-outlined text-amber-500 text-[18px] shrink-0">call</span>
+                            <a href="tel:+919655982583"
+                                class="hover:text-amber-400 transition-colors font-semibold text-slate-200">+91 96559
+                                82583</a>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <span class="material-symbols-outlined text-emerald-400 text-[18px] shrink-0">chat</span>
+                            <a href="https://wa.me/919655982583" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-emerald-400 transition-colors text-slate-200">WhatsApp Trade Desk</a>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <span class="material-symbols-outlined text-sky-400 text-[18px] shrink-0">mail</span>
+                            <span>info@sivakasitradingagency.com</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 text-xs text-slate-500">
+                            <span class="material-symbols-outlined text-slate-500 text-[16px] shrink-0">schedule</span>
+                            <span>Mon – Sun: 8:00 AM – 9:00 PM (IST)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Statutory Bar & Copyright -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+                    <p>© 2025 Sivakasi Trading Agency, Sivakasi. All Rights Reserved.</p>
+                    <span class="hidden sm:inline text-slate-700">•</span>
+                    <p>CSIR-NEERI & PESO Regulatory Compliant</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="safety.html" class="hover:text-amber-400 transition-colors">Safety Standards</a>
+                    <a href="shipping.html" class="hover:text-amber-400 transition-colors">Transit Policy</a>
+                    <a href="price-list.html" class="hover:text-amber-400 transition-colors">Wholesale Rates</a>
+                    <a href="contact.html" class="hover:text-amber-400 transition-colors">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <span class="material-symbols-outlined" style="font-size:24px;">arrow_upward</span>
+    </button>
+
+    <!-- Floating WhatsApp Widget (ORDER NOW Ribbon + WhatsApp Circle) -->
+    <div class="floating-whatsapp-wrap" id="floatingWhatsapp">
+        <div class="order-now-ribbon">
+            <span class="ribbon-part-order">ORDER</span>
+            <span class="ribbon-part-now">NOW</span>
+        </div>
+        <a class="floating-whatsapp-btn"
+            href="https://wa.me/919655982583?text=Hi%20Sivakasi%20Trading%20Agency%2C%20I%20would%20like%20to%20place%20an%20order%20for%20Diwali%20crackers."
+            target="_blank" rel="noopener noreferrer" aria-label="Order Now on WhatsApp">
+            <span class="floating-whatsapp-pulse"></span>
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                <path
+                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.42C8.94 7.42 8.78 7.49 8.65 7.65C8.42 7.9 7.77 8.52 7.77 9.78C7.77 11.04 8.69 12.25 8.82 12.43C8.95 12.6 10.64 15.22 13.22 16.33C15.37 17.26 15.8 17.07 16.26 17.03C16.73 16.99 17.77 16.42 17.98 15.82C18.2 15.22 18.2 14.7 18.13 14.6C18.06 14.49 17.89 14.43 17.64 14.31C17.39 14.18 16.14 13.57 15.91 13.49C15.68 13.4 15.51 13.36 15.35 13.61C15.18 13.85 14.7 14.43 14.56 14.6C14.41 14.76 14.27 14.78 14.02 14.66C13.77 14.53 12.98 14.28 12.04 13.44C11.31 12.78 10.82 11.98 10.67 11.73C10.53 11.48 10.66 11.35 10.78 11.23C10.89 11.12 11.03 10.94 11.16 10.79C11.28 10.64 11.32 10.53 11.41 10.36C11.49 10.2 11.45 10.05 11.39 9.93C11.33 9.8 10.85 8.63 10.65 8.14C10.45 7.67 10.25 7.73 10.1 7.72C9.95 7.72 9.79 7.71 9.62 7.71C9.45 7.71 9.28 7.42 9.11 7.42Z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

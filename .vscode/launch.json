@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch in Brave (Localhost:8080)",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "runtimeExecutable": "C:\\Users\\jthir\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+            "preLaunchTask": "Start Dev Server"
+        },
+        {
+            "name": "Launch in Edge (Localhost:8080)",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "Start Dev Server"
+        },
+        {
+            "name": "Open index.html in Brave",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}\\index.html",
+            "runtimeExecutable": "C:\\Users\\jthir\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+        },
+        {
+            "name": "Open index.html in Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}\\index.html",
+            "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+        }
+    ]
+}

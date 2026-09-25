@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Dev Server",
+            "type": "shell",
+            "command": "node server.js",
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Siva's Pyro Paradise Dev Server Active|dev server already active",
+                    "endsPattern": "URL: http://localhost:8080|already active"
+                }
+            }
+        }
+    ]
+}

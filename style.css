@@ -1,0 +1,260 @@
+/* ==========================================================================
+   Sivakasi Trading Agency - Professional Light Theme Styling & Animations
+   ========================================================================== */
+
+@layer base {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #0f172a;
+    }
+    body {
+        overscroll-behavior: none;
+    }
+    main > :first-child {
+        margin-top: 0 !important;
+    }
+    main > :last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Crisp Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c;
+}
+
+/* === Canvas Fireworks Overlay in Hero === */
+#fireworksCanvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+/* === Scroll Reveal Transitions === */
+.reveal-init {
+    opacity: 0;
+    transform: translateY(28px);
+}
+
+.reveal-animate {
+    transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* === Product & Service Cards: Clean Professional Light Aesthetic === */
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.06);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease, opacity 0.28s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(234, 88, 12, 0.4);
+    box-shadow: 0 16px 32px -8px rgba(234, 88, 12, 0.14), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
+.product-card.filter-hide {
+    display: none !important;
+}
+
+.product-card.filter-show {
+    animation: cardFadeIn 0.32s ease forwards;
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* === Floating Back to Top Button === */
+#backToTop {
+    position: fixed;
+    bottom: 6rem;
+    right: 1.75rem;
+    z-index: 99;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    background: #b91c1c;
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.35);
+}
+
+#backToTop.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+#backToTop:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: #991b1b;
+    box-shadow: 0 10px 28px rgba(185, 28, 28, 0.45);
+}
+
+/* === Floating WhatsApp Widget & ORDER NOW Ribbon (Image 2 Reference) === */
+.floating-whatsapp-wrap {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.order-now-ribbon {
+    position: relative;
+    margin-bottom: -8px;
+    margin-right: 4px;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    transform: rotate(-6deg);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+    animation: ribbonFloat 2.6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes ribbonFloat {
+    0%, 100% { transform: translateY(0) rotate(-6deg); }
+    50% { transform: translateY(-4px) rotate(-4deg); }
+}
+
+.ribbon-part-order {
+    background: linear-gradient(135deg, #4a044e 0%, #701a75 100%);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    padding: 3px 8px 3px 9px;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+    text-transform: uppercase;
+}
+
+.ribbon-part-now {
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    padding: 3px 10px 3px 6px;
+    margin-left: -4px;
+    clip-path: polygon(0 0, 100% 0, 86% 50%, 100% 100%, 12% 100%);
+    text-transform: uppercase;
+}
+
+.floating-whatsapp-btn {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #25D366, #128C7E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.65);
+}
+
+.floating-whatsapp-pulse {
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 211, 102, 0.6);
+    animation: waPulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes waPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.35); opacity: 0; }
+}
+
+/* === Professional Card Accents & Borders === */
+.feature-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s ease;
+}
+.feature-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.08);
+}
+
+/* === Success Pulse Animation === */
+@keyframes successPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* === Interactive Modal Styling === */
+.modal-backdrop {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(8px);
+    transition: opacity 0.25s ease;
+}
+
+.modal-content {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+    animation: modalPopIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalPopIn {
+    from {
+        opacity: 0;
+        transform: scale(0.94) translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* === Hero Parallax === */
+#hero .absolute img {
+    will-change: transform;
+}

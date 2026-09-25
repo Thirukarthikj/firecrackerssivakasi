@@ -1,0 +1,20 @@
+{
+  "name": "sivakasi-trading-agency",
+  "version": "1.0.0",
+  "description": "Sivakasi Trading Agency - Sivakasi Master Fireworks Wholesaler Portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js --open",
+    "dev": "node server.js",
+    "test": "node scratch/check_site.js"
+  },
+  "keywords": [
+    "fireworks",
+    "crackers",
+    "sivakasi",
+    "diwali",
+    "wholesale"
+  ],
+  "author": "Sivakasi Trading Agency",
+  "license": "ISC"
+}
