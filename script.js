@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
 
                 setTimeout(() => {
-                    window.open(`https://wa.me/919655982583?text=${formattedMsg}`, '_blank');
+                    window.open(`https://wa.me/919876543210?text=${formattedMsg}`, '_blank');
                     submitBtn.innerHTML = prevHTML;
                     submitBtn.disabled = false;
                     form.reset();
